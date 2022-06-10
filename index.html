@@ -7,20 +7,32 @@
  <body>
   <div class="outerdiv">
    <div class="main">
+    <h1>Sign Up</h1>
     <form class="fields">
-      <label>First name</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label>last name</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label>Email</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label>Password</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label>Gender</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label>Date of birth</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <input type="submit" value="Submit">
+      <label class="fields-label">First name</label><br>
+      <input type="text" class="fields-input"><br>
+      <label class="fields-label">Last name</label><br>
+      <input type="text" class="fields-input"><br>
+      <label class="fields-label">Email</label><br>
+      <input type="email" class="fields-input"><br>
+      <label class="fields-label">Password</label><br>
+      <input type="password" class="fields-input"><br>
+      <label class="fields-label"> Confrim Password</label><br>
+      <input type="password" class="fields-input"><br>
+      <label class="fields-label">Gender</label><br>
+      <div class="radio-option">
+       <label for="html" class="rdio-opt">Male</label><br>
+       <input type="radio">
+       <label for="css" class="rdio-opt">Female</label><br>
+       <input type="radio">
+       <label for="css" class="rdio-opt">Others</label><br>
+       <input type="radio">
+      </div>
+      <label class="fields-label">Date of birth</label><br>
+      <input type="date" class="fields-input"><br>
+      <div class="sub-btn">
+       <button class="btn">Submit</button>
+      </div>
      </form>
    </div>
   </div>

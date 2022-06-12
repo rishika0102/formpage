@@ -51,3 +51,12 @@ h1 {
   display:  flex;
   justify-content:  center;
 }
+input:optional {
+  border-color: gray;
+}
+input:required:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+}

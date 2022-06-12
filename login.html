@@ -1,7 +1,7 @@
 <html>
 <html>
  <head>
-  <title>Sign up form page</title>
+  <title>Login page</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="stylesheet" href="css/style.css" />
  </head>
@@ -9,18 +9,18 @@
   <div class="outerdiv">
    <div class="main">
     <h1>Login In</h1>
-    <form class="fields">
+    <form class="fields" id="logindetails">
       <label class="fields-label">Email</label><br>
-      <input type="email" class="fields-input"><br>
+      <input type="email" class="fields-input" id="checkemail"><br>
       <label class="fields-label">Password</label><br>
-      <input type="password" class="fields-input"><br>
+      <input type="password" class="fields-input" id="checkpwd"><br>
       <div class="sub-btn">
-       <button class="btn">Login</button>
+       <button class="btn" onclick="checkvalidation()">Login</button>
       </div>
      </form>
    </div>
   </div>
+   <script src="js/script.js"></script>
  </body>
 </html>
 
-</html>

@@ -6,7 +6,7 @@
 }
 .main {
   position:  absolute;
-  margin:  8% 30%;
+  margin:  6% 30%;
   background-color:  #4a3f2a;
   width:  100%;
   max-width:  500px;
@@ -51,3 +51,24 @@ h1 {
   display:  flex;
   justify-content:  center;
 }
+.login {
+  color:  white;
+  font-size:  17px;
+}
+.login a:visited{
+  color: blue;
+}
+.log-in {
+  display:  flex;
+  justify-content:  center; text-align:  center;
+}
+/*input:focus {
+  border-color:  grey;
+}
+ input:valid {
+  border-color:  green;
+}
+input:invalid {
+  border-color:  red;
+}*/
+

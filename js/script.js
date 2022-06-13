@@ -1,14 +1,14 @@
 
 function checkfields(x) {
 
- var firstname = document.forms["users"]["firstname"].value;
- var lastname = document.forms["users"]["lastname"].value;
- var email = document.forms["users"]["email"].value;
- var pwd = document.forms["users"]["pwd"].value;
- var conpwd = document.forms["users"]["conpwd"].value;
- var gend = document.forms["users"]["gend"].value;
- var dob = document.forms["users"]["dob"].value;
- if (firstname == "" || lastname == "" || email == "" || pwd == "" || conpwd == null || gend == null || dob == null) {
+ const firstName = document.forms["users"]["firstname"].value;
+ const lastName = document.forms["users"]["lastname"].value;
+ const email = document.forms["users"]["email"].value;
+ const pwd = document.forms["users"]["pwd"].value;
+ const conpwd = document.forms["users"]["conpwd"].value;
+ const gend = document.forms["users"]["gend"].value;
+ const dob = document.forms["users"]["dob"].value;
+ if (firstName == "" || lastName == "" || email == "" || pwd == "" || conpwd == null || gend == null || dob == null) {
   x.style.border = "red solid 5px";
   console.log("hello", firstname);
  }
@@ -16,15 +16,14 @@ function checkfields(x) {
 }
 function chkfields(z) {
 
- let firstname, lastname, email, pwd, conpwd, gend, dob;
- firstname = document.forms["users"]["firstname"].value;
- lastname = document.forms["users"]["lastname"].value;
- email = document.forms["users"]["email"].value;
- pwd = document.forms["users"]["pwd"].value;
- conpwd = document.forms["users"]["conpwd"].value;
- gend = document.forms["users"]["gend"].value;
- dob = document.forms["users"]["dob"].value;
- if (firstname != null && lastname != null && email != null && pwd != null && conpwd != null && gend != null && dob != null) {
+ const firstName = document.forms["users"]["firstname"].value;
+ const lastName = document.forms["users"]["lastname"].value;
+ const email = document.forms["users"]["email"].value;
+ const pwd = document.forms["users"]["pwd"].value;
+ const conpwd = document.forms["users"]["conpwd"].value;
+ const gend = document.forms["users"]["gend"].value;
+ const dob = document.forms["users"]["dob"].value;
+ if (firstName != null && lastName != null && email != null && pwd != null && conpwd != null && gend != null && dob != null) {
   z.style.border = "green solid 5px";
   console.log("world");
  }
@@ -32,8 +31,8 @@ function chkfields(z) {
 }
 function signUp() {
 
- const firstname = document.forms["users"]["firstname"].value;
- const lastname = document.forms["users"]["lastname"].value;
+ const firstName = document.forms["users"]["firstname"].value;
+ const lastName = document.forms["users"]["lastname"].value;
  const email = document.forms["users"]["email"].value;
  const pwd = document.forms["users"]["pwd"].value;
  const conpwd = document.forms["users"]["conpwd"].value;
@@ -44,8 +43,8 @@ function signUp() {
  }
  const userrecord = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [];
  userrecord.push({
-  firstname: firstname,
-  lastname: lastname,
+  firstName: firstName,
+  lastName: lastName,
   email: email,
   pwd: pwd,
   conpwd: conpwd,

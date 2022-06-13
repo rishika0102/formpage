@@ -1,26 +1,30 @@
 <html>
-<html>
- <head>
-  <title>Login page</title>
+ <html>
+  <head>
+   <title>Login page</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="stylesheet" href="css/style.css" />
- </head>
- <body>
-  <div class="outerdiv">
-   <div class="main">
-    <h1>Login In</h1>
-    <form class="fields" id="logindetails">
-      <label class="fields-label">Email</label><br>
-      <input type="email" class="fields-input" id="checkemail"><br>
-      <label class="fields-label">Password</label><br>
-      <input type="password" class="fields-input" id="checkpwd"><br>
+   <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+   <div class="outerdiv">
+    <div class="main">
+     <h1>Login In</h1>
+     <form method="POST" class="fields" id="users" action="#">
+      <label class="fields-label">Email</label><br />
+      <input type="email" class="fields-input" name="checkemail" id="checkemail" /><br />
+      <label class="fields-label">Password</label><br />
+      <input type="password" class="fields-input" name="checkpswd" id="checkpwd" /><br />
       <div class="sub-btn">
-       <button class="btn" onclick="checkvalidation()">Login</button>
+       <button class="btn" onclick="event.preventDefault(); return login();">Login</button>
+      </div>
+      <div class="log-in">
+       <p class="login">have not already sign-up <a href="file:///home/rails/Rishika/Demo/formpage/index.html?"> Sign-Up </a></p>
       </div>
      </form>
+    </div>
    </div>
-  </div>
    <script src="js/script.js"></script>
- </body>
+  </body>
+ </html>
 </html>
-

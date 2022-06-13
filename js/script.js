@@ -1,3 +1,4 @@
+
 function checkfields(x) {
 
  var firstname = document.forms["users"]["firstname"].value;

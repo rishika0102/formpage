@@ -1,0 +1,20 @@
+@media only screen and (max-width: 600px) {
+.outerdiv {
+  width:  100%;
+  max-width:  410px;
+}
+.main {
+  margin:  14% 8%;
+  width:  100%;
+  max-width:  338px;
+}
+.fields-label {
+  margin-left:  6px;
+}
+.fields-input {
+  margin-left:  6px;
+}
+.rdio-opt {
+  margin-left:  12px;
+}
+}

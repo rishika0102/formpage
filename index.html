@@ -10,16 +10,15 @@
    <div class="main">
     <h1>Sign Up</h1>
     <form method="POST" action="#" class="fields" id="users">
-     <label class="fields-label" pattern="[A-Za-z].{6,}">First name</label><br />
-     <input type="text" class="fields-input" id="name" name="firstname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+    	<label class="fields-label" pattern="[A-Za-z].{6,}">First name</label><br />
+      <input type="text" class="fields-input" name="firstname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
      <label class="fields-label">Last name</label><br />
-     <input type="text" class="fields-input" id="lastname" name="lastname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="text" class="fields-input" name="lastname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
      <label class="fields-label">Email</label><br />
-     <input type="email" class="fields-input" id="emails" name="email" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="email" class="fields-input" name="email" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
      <label class="fields-label">Password</label><br />
      <input
       type="password"
-      id="pwds"
       class="fields-input"
       value=""
       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}"
@@ -30,14 +29,13 @@
       required
      />
      <label class="fields-label"> Confrim Password</label><br />
-     <input type="password" class="fields-input" id="conpwd" value="" name="conpwd" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="password" class="fields-input" value="" name="conpwd" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
      <label class="fields-label">Gender</label><br />
 
      <div class="radio-option">
       <label for="html" class="rdio-opt">Male</label><br />
       <input
        type="radio"
-       id="gen"
        name="gend"
        onfocus="checkfields(this)"
        onfocusout="chkfields(
@@ -46,7 +44,6 @@
       <label for="css" class="rdio-opt">Female</label><br />
       <input
        type="radio"
-       id="gen"
        name="gend"
        onfocus="checkfields(this)"
        onfocusout="chkfields(
@@ -55,7 +52,6 @@
       <label for="css" class="rdio-opt">Others</label><br />
       <input
        type="radio"
-       id="gen"
        name="gend"
        onfocus="checkfields(this)"
        onfocusout="chkfields(
@@ -64,19 +60,19 @@
      </div>
 
      <label class="fields-label">Date of birth</label><br />
-     <input type="date" class="fields-input" name="dob" id="Dob" onfocus="checkfields(this)" onfocusout="chkfields(this)" /><br />
+     <input type="date" class="fields-input" name="dob" onfocus="checkfields(this)" onfocusout="chkfields(this)" /><br />
      <div class="sub-btn">
-      <button class="btn" onclick="signUp();">Submit</button>
+      <button class="btn" onclick="return signUp();">Submit</button>
      </div>
      <div class="log-in">
       <p class="login">
        have already sign-up
-       <a href="file:///home/rails/Rishika/Demo/formpage/login.html?"> Login </a>
+       <a href="../login.html"> Login </a>
       </p>
      </div>
     </form>
    </div>
   </div>
-  <script src="js/script.js"></script>
+  	<script src="js/script.js"></script>
  </body>
 </html>

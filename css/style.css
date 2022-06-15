@@ -1,12 +1,12 @@
 .outerdiv {
-  background-image:  url("../images/bckimg.jpg");
+  background-image:  url("../images/bckg.jpeg");
   height:  100%;
   opacity:  0.7;
   position:  relative;
 }
 .main {
   position:  absolute;
-  margin:  6% 30%;
+  margin:  4% 30%;
   background-color:  #4a3f2a;
   width:  100%;
   max-width:  500px;
@@ -30,10 +30,12 @@ h1 {
   border-color:  black;
   border-width:  2px;
   margin-left:  38px;
+  border-radius:  6px;
 }
 .radio-option {
   display:  flex;
   flex-direction:  row;
+  margin: 0px 0px 12px 0px;
 }
 .rdio-opt {
   color:  white;

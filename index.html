@@ -11,11 +11,11 @@
     <h1>Sign Up</h1>
     <form method="POST" action="#" class="fields" id="users">
     	<label class="fields-label" pattern="[A-Za-z].{6,}">First name</label><br />
-      <input type="text" class="fields-input" name="firstname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+      <input type="text" class="fields-input" name="firstname" onblur="checkFields(this)" required /><br />
      <label class="fields-label">Last name</label><br />
-     <input type="text" class="fields-input" name="lastname" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="text" class="fields-input" name="lastname" onblur="checkFields(this)" required /><br />
      <label class="fields-label">Email</label><br />
-     <input type="email" class="fields-input" name="email" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="email" class="fields-input" name="email" onblur="checkFields(this)" required /><br />
      <label class="fields-label">Password</label><br />
      <input
       type="password"
@@ -24,12 +24,11 @@
       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}"
       title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
       name="pwd"
-      onfocus="checkfields(this)"
-      onfocusout="chkfields(this)"
+      onblur="checkFields(this)"
       required
      />
      <label class="fields-label"> Confrim Password</label><br />
-     <input type="password" class="fields-input" value="" name="conpwd" onfocus="checkfields(this)" onfocusout="chkfields(this)" required /><br />
+     <input type="password" class="fields-input" value="" name="conpwd" onblur="checkFields(this)" required /><br />
      <label class="fields-label">Gender</label><br />
 
      <div class="radio-option">
@@ -37,37 +36,31 @@
       <input
        type="radio"
        name="gend"
-       onfocus="checkfields(this)"
-       onfocusout="chkfields(
-        this)"
+       onblur="checkFields(this)"
       />
       <label for="css" class="rdio-opt">Female</label><br />
       <input
        type="radio"
        name="gend"
-       onfocus="checkfields(this)"
-       onfocusout="chkfields(
-        this)"
+       onblur="checkFields(this)"
       />
-      <label for="css" class="rdio-opt">Others</label><br />
+      <label for="css" class="rdio-opt">Other</label><br />
       <input
        type="radio"
        name="gend"
-       onfocus="checkfields(this)"
-       onfocusout="chkfields(
-        this)"
+       onblur="checkFields(this)"
       />
      </div>
 
      <label class="fields-label">Date of birth</label><br />
-     <input type="date" class="fields-input" name="dob" onfocus="checkfields(this)" onfocusout="chkfields(this)" /><br />
+     <input type="date" class="fields-input" name="dob" min='1999-01-01' max='2023-01-01' onblur="checkFields(this)"  /><br />
      <div class="sub-btn">
-      <button class="btn" onclick="return signUp();">Submit</button>
+      <button class="btn" onclick="event.preventDefault(); return signUp();">Submit</button>
      </div>
      <div class="log-in">
       <p class="login">
-       have already sign-up
-       <a href="../login.html"> Login </a>
+       Have already sign-up ?
+       <a href="./login.html"> Login </a>
       </p>
      </div>
     </form>

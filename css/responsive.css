@@ -4,9 +4,10 @@
   max-width:  410px;
 }
 .main {
-  margin:  14% 8%;
-  width:  100%;
-  max-width:  338px;
+  margin: 7% 6%;
+  width: 100%;
+  max-width: 308px;
+  max-height: 583px;
 }
 .fields-label {
   margin-left:  6px;
